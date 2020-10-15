@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/benjamin/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/benjamin/ROCO318/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/benjamin/catkin_ws/build
+CMAKE_BINARY_DIR = /home/benjamin/ROCO318/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include beginner_tutorials/CMakeFiles/talker.dir/depend.make
@@ -58,17 +58,17 @@ include beginner_tutorials/CMakeFiles/talker.dir/progress.make
 include beginner_tutorials/CMakeFiles/talker.dir/flags.make
 
 beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o: beginner_tutorials/CMakeFiles/talker.dir/flags.make
-beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o: /home/benjamin/catkin_ws/src/beginner_tutorials/src/talker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o"
-	cd /home/benjamin/catkin_ws/build/beginner_tutorials && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/talker.cpp.o -c /home/benjamin/catkin_ws/src/beginner_tutorials/src/talker.cpp
+beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o: /home/benjamin/ROCO318/catkin_ws/src/beginner_tutorials/src/talker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/ROCO318/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o"
+	cd /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/talker.dir/src/talker.cpp.o -c /home/benjamin/ROCO318/catkin_ws/src/beginner_tutorials/src/talker.cpp
 
 beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/talker.cpp.i"
-	cd /home/benjamin/catkin_ws/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/catkin_ws/src/beginner_tutorials/src/talker.cpp > CMakeFiles/talker.dir/src/talker.cpp.i
+	cd /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/ROCO318/catkin_ws/src/beginner_tutorials/src/talker.cpp > CMakeFiles/talker.dir/src/talker.cpp.i
 
 beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/talker.cpp.s"
-	cd /home/benjamin/catkin_ws/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/catkin_ws/src/beginner_tutorials/src/talker.cpp -o CMakeFiles/talker.dir/src/talker.cpp.s
+	cd /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/ROCO318/catkin_ws/src/beginner_tutorials/src/talker.cpp -o CMakeFiles/talker.dir/src/talker.cpp.s
 
 beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o.requires:
 
@@ -88,33 +88,33 @@ talker_OBJECTS = \
 # External object files for target talker
 talker_EXTERNAL_OBJECTS =
 
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/build.make
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libroscpp.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librostime.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libcpp_common.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker"
-	cd /home/benjamin/catkin_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/src/talker.cpp.o
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/build.make
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libroscpp.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/librostime.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /opt/ros/kinetic/lib/libcpp_common.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker: beginner_tutorials/CMakeFiles/talker.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/ROCO318/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker"
+	cd /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/talker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-beginner_tutorials/CMakeFiles/talker.dir/build: /home/benjamin/catkin_ws/devel/lib/beginner_tutorials/talker
+beginner_tutorials/CMakeFiles/talker.dir/build: /home/benjamin/ROCO318/catkin_ws/devel/lib/beginner_tutorials/talker
 
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/build
 
@@ -123,10 +123,10 @@ beginner_tutorials/CMakeFiles/talker.dir/requires: beginner_tutorials/CMakeFiles
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/requires
 
 beginner_tutorials/CMakeFiles/talker.dir/clean:
-	cd /home/benjamin/catkin_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/talker.dir/cmake_clean.cmake
+	cd /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/talker.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/clean
 
 beginner_tutorials/CMakeFiles/talker.dir/depend:
-	cd /home/benjamin/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/benjamin/catkin_ws/src /home/benjamin/catkin_ws/src/beginner_tutorials /home/benjamin/catkin_ws/build /home/benjamin/catkin_ws/build/beginner_tutorials /home/benjamin/catkin_ws/build/beginner_tutorials/CMakeFiles/talker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/benjamin/ROCO318/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/benjamin/ROCO318/catkin_ws/src /home/benjamin/ROCO318/catkin_ws/src/beginner_tutorials /home/benjamin/ROCO318/catkin_ws/build /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials /home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials/CMakeFiles/talker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/talker.dir/depend
 

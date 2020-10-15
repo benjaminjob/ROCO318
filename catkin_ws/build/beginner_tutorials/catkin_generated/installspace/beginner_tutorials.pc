@@ -1,4 +1,4 @@
-prefix=/home/benjamin/catkin_ws/install
+prefix=/home/benjamin/ROCO318/catkin_ws/install
 
 Name: beginner_tutorials
 Description: Description of beginner_tutorials
