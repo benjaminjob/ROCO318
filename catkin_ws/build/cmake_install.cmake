@@ -126,7 +126,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/benjamin/ROCO318/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/benjamin/ROCO318/catkin_ws/build/imu_odom_and_twist_msgs/cmake_install.cmake")
   include("/home/benjamin/ROCO318/catkin_ws/build/beginner_tutorials/cmake_install.cmake")
+  include("/home/benjamin/ROCO318/catkin_ws/build/odom_logger/cmake_install.cmake")
 
 endif()
 

@@ -1,0 +1,7 @@
+<launch>
+    <node name="odom_logger" pkg="odom_logger" type="odom_logger" respawn="false" output="screen">
+        <param name = "imu_odom_topic_name" value = "/fake_imu_odom"/>
+	<param name = "pose_imu_odom_topic_name" value = "/my_pose_imu_odom"/>
+    </node>
+</launch>
+

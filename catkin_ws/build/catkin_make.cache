@@ -1,2 +1,2 @@
-beginner_tutorials
+beginner_tutorials:imu_odom_and_twist_msgs:odom_logger
 -DCATKIN_DEVEL_PREFIX=/home/benjamin/ROCO318/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/benjamin/ROCO318/catkin_ws/install -G Unix Makefiles
