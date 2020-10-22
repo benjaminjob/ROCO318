@@ -1,0 +1,6 @@
+<launch>
+    <node name="talker_class" pkg="beginner_tutorials" type="talker" respawn="false" output="screen">
+    </node>
+    <node name="listener_class" pkg="beginner_tutorials" type="listener" respawn="false" output="screen">
+    </node>
+</launch>

@@ -130,12 +130,16 @@ include_directories(
 ## either from message generation or dynamic reconfigure
  add_dependencies(talker ${talker_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
  add_dependencies(listener ${listener_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+ add_dependencies(Talker ${Talker_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+ add_dependencies(Listener ${Listener_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
  add_executable(talker_node src/talker.cpp)
  add_executable(listener_node src/listener.cpp)
+ add_executable(talker_class_node src/Talker.cpp)
+ add_executable(listener_class_node src/Listener.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -152,6 +156,12 @@ include_directories(
    ${catkin_LIBRARIES}
  )
  target_link_libraries(listener_node
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(talker_class_node
+   ${catkin_LIBRARIES}
+ )
+ target_link_libraries(listener_class_node
    ${catkin_LIBRARIES}
  )
 
