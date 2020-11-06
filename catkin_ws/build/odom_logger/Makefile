@@ -66,28 +66,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,16 +78,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -122,16 +100,38 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target test
+test/fast: test
 
-.PHONY : rebuild_cache/fast
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+odom_logger/CMakeFiles/fake_imu_odom.dir/rule:
+	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 odom_logger/CMakeFiles/fake_imu_odom.dir/rule
+.PHONY : odom_logger/CMakeFiles/fake_imu_odom.dir/rule
+
+# Convenience name for target.
+fake_imu_odom: odom_logger/CMakeFiles/fake_imu_odom.dir/rule
+
+.PHONY : fake_imu_odom
+
+# fast build rule for target.
+fake_imu_odom/fast:
+	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f odom_logger/CMakeFiles/fake_imu_odom.dir/build.make odom_logger/CMakeFiles/fake_imu_odom.dir/build
+.PHONY : fake_imu_odom/fast
+
+# Convenience name for target.
 odom_logger/CMakeFiles/odom_and_twist_logger.dir/rule:
 	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 odom_logger/CMakeFiles/odom_and_twist_logger.dir/rule
 .PHONY : odom_logger/CMakeFiles/odom_and_twist_logger.dir/rule
@@ -194,36 +209,6 @@ odom_logger: odom_logger/CMakeFiles/odom_logger.dir/rule
 odom_logger/fast:
 	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f odom_logger/CMakeFiles/odom_logger.dir/build.make odom_logger/CMakeFiles/odom_logger.dir/build
 .PHONY : odom_logger/fast
-
-# Convenience name for target.
-odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/build.make odom_logger/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
-odom_logger/CMakeFiles/fake_imu_odom.dir/rule:
-	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 odom_logger/CMakeFiles/fake_imu_odom.dir/rule
-.PHONY : odom_logger/CMakeFiles/fake_imu_odom.dir/rule
-
-# Convenience name for target.
-fake_imu_odom: odom_logger/CMakeFiles/fake_imu_odom.dir/rule
-
-.PHONY : fake_imu_odom
-
-# fast build rule for target.
-fake_imu_odom/fast:
-	cd /home/benjamin/ROCO318/catkin_ws/build && $(MAKE) -f odom_logger/CMakeFiles/fake_imu_odom.dir/build.make odom_logger/CMakeFiles/fake_imu_odom.dir/build
-.PHONY : fake_imu_odom/fast
 
 src/0domLogger.o: src/0domLogger.cpp.o
 
@@ -312,17 +297,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... odom_and_twist_logger"
-	@echo "... odom_logger"
 	@echo "... list_install_components"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... fake_imu_odom"
 	@echo "... install"
-	@echo "... test"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... fake_imu_odom"
+	@echo "... odom_and_twist_logger"
+	@echo "... install/local"
+	@echo "... odom_logger"
+	@echo "... install/strip"
 	@echo "... src/0domLogger.o"
 	@echo "... src/0domLogger.i"
 	@echo "... src/0domLogger.s"
