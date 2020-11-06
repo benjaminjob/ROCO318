@@ -1,0 +1,8 @@
+prefix=/home/benjamin/ROCO318/catkin_ws/install
+
+Name: op3_navigation
+Description: Description of op3_navigation
+Version: 0.2.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

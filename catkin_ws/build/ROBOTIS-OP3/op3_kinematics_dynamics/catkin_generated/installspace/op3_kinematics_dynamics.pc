@@ -1,0 +1,8 @@
+prefix=/home/benjamin/ROCO318/catkin_ws/install
+
+Name: op3_kinematics_dynamics
+Description: Description of op3_kinematics_dynamics
+Version: 0.2.1
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib -lop3_kinematics_dynamics
+Requires: roscpp robotis_math cmake_modules

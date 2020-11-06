@@ -1,0 +1,2 @@
+set(op3_ball_detector_MESSAGE_FILES "/home/benjamin/ROCO318/catkin_ws/src/ROBOTIS-OP3-Demo/op3_ball_detector/msg/CircleSetStamped.msg;/home/benjamin/ROCO318/catkin_ws/src/ROBOTIS-OP3-Demo/op3_ball_detector/msg/BallDetectorParams.msg")
+set(op3_ball_detector_SERVICE_FILES "/home/benjamin/ROCO318/catkin_ws/src/ROBOTIS-OP3-Demo/op3_ball_detector/srv/GetParameters.srv;/home/benjamin/ROCO318/catkin_ws/src/ROBOTIS-OP3-Demo/op3_ball_detector/srv/SetParameters.srv")

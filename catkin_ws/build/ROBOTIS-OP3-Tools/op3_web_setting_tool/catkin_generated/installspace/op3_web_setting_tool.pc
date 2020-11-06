@@ -1,0 +1,8 @@
+prefix=/home/benjamin/ROCO318/catkin_ws/install
+
+Name: op3_web_setting_tool
+Description: Description of op3_web_setting_tool
+Version: 0.2.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

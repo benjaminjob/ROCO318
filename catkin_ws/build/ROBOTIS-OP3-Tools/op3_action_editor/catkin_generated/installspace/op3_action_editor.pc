@@ -1,0 +1,8 @@
+prefix=/home/benjamin/ROCO318/catkin_ws/install
+
+Name: op3_action_editor
+Description: Description of op3_action_editor
+Version: 0.2.2
+Cflags: -I${prefix}/include -I/usr/include
+Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
+Requires: roscpp std_msgs dynamixel_sdk robotis_controller robotis_device op3_action_module op3_base_module

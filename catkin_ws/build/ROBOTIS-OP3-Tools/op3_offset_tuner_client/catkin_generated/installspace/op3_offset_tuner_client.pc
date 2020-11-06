@@ -1,0 +1,8 @@
+prefix=/home/benjamin/ROCO318/catkin_ws/install
+
+Name: op3_offset_tuner_client
+Description: Description of op3_offset_tuner_client
+Version: 0.2.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lop3_offset_tuner_client
+Requires: rqt_gui rqt_gui_cpp roscpp roslib op3_offset_tuner_msgs
